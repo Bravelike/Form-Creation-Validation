@@ -31,10 +31,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (!isValid) {
         feedbackDiv.innerHTML = messages.join("<br>");
-        feedbackDiv.className = "error";
+        feedbackDiv.className = "#dc3545";
         feedbackDiv.style.display = "block"
     } else {
         feedbackDiv.innerHTML = "Registration Successful";
+        feedbackDiv.style.display = "block"
         feedbackDiv.style.color = "#28a745";
         form.reset();
 
